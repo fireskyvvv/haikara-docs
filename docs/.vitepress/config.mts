@@ -7,7 +7,7 @@ const rootLocale = 'ja'
 const supportedLocales = [rootLocale, 'en'];
 
 const vitePressConfigs = {
-    base: `/haikara/`,
+    base: `/HaikaraDocs/`,
     title: "Haikara",
     description: "A VitePress Site",
     rewrites: {
