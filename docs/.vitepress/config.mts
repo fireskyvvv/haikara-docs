@@ -18,7 +18,7 @@ const vitePressConfigs = {
             {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
         ]
     },
-    ignoreDeadLinks: true,
+    ignoreDeadLinks: true, // todo set false
 }
 
 const commonSidebarConfigs = {

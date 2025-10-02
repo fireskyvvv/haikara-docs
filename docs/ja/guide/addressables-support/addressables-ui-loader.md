@@ -35,7 +35,7 @@ UIアセットのGuidをアドレスとして扱い、`Addressables.LoadAssetAsy
 [todo 画像]
 
 
-## Addressables Builder
+## Addressables Group Maker
 
 `Addressables UI Loader`に対応するAddressablesの設定を行うための専用のツールを用意しています。  
-メニューバーの `Haikara > Addressables > BuilderWindow` からツールを起動することができます。  
+メニューバーの `Haikara > Addressables > Group Maker Window` からツールを起動することができます。  
