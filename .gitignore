@@ -1,0 +1,15 @@
+*
+!*/
+
+!/.github/**
+!/.gitignore
+!/.gitattributes
+
+!/package.json
+!/package-lock.json
+
+!/docs/.vitepress/config.mts
+!/docs/.vitepress/theme/**
+
+!/docs/en**
+!/docs/ja**
