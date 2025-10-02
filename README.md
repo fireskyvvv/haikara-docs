@@ -1,0 +1,1 @@
+﻿https://fireskyvvv.github.io/haikara-docs/
