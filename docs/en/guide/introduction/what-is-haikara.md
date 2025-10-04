@@ -130,4 +130,4 @@ A Style class corresponding to such a .uss is generated as follows, allowing you
 ```
 
 ## License
-Haikara is released under the [MIT License]().
+Haikara is released under the [MIT License](https://github.com/fireskyvvv/Haikara/blob/master/LICENSE.md).

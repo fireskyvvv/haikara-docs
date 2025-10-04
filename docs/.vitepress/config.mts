@@ -14,7 +14,7 @@ const vitePressConfigs = {
     },
     themeConfig: {
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
+            {icon: 'github', link: 'https://github.com/fireskyvvv/Haikara'}
         ]
     },
     ignoreDeadLinks: true, // todo set false
@@ -77,7 +77,7 @@ const vitePressI18nConfigs = {
                 },
                 {
                     text: 'Reference',
-                    link: '/reference/one'
+                    link: '/reference/index'
                 }
             ]
         },
@@ -93,7 +93,7 @@ const vitePressI18nConfigs = {
                 },
                 {
                     text: 'Reference',
-                    link: '/en/reference/one'
+                    link: '/en/reference/index'
                 }
             ]
         },

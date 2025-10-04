@@ -130,4 +130,4 @@ uss例
 ```
 
 ## ライセンス
-Haikaraは [MIT License]()で公開しています。
+Haikaraは [MIT License](https://github.com/fireskyvvv/Haikara/blob/master/LICENSE.md)で公開しています。
