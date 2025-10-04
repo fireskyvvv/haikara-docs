@@ -34,7 +34,7 @@ private static readonly BindableProperty<Label> LabelTextProperty =
 |-----------------|---------------------------------------------------------------------------------------------------------|-----|----------------------------------------|
 | bindingId       | [`BindingId`](https://docs.unity3d.com/ScriptReference/UIElements.BindingId.html)                       | yes | -                                      |
 | dataSourcePath  | [`PropertyPath`](https://docs.unity3d.com/ScriptReference/Unity.Properties.PropertyPath.html)           | yes | -                                      |
-| elementNameInfo | [`ElementNameInfo`](../view-source-generation.md#ElementNameInfo)                        | yes | -                                      |
+| elementNameInfo | [`ElementNameInfo`](../source-generation/view-source-generation.md#ElementNameInfo)                        | yes | -                                      |
 | bindingMode     | [`BindingMode`](https://docs.unity3d.com/ScriptReference/UIElements.BindingMode.html)                   | no  | `BindingMode.ToTarget`                 |
 | updateTrigger   | [`BindingUpdateTrigger`](https://docs.unity3d.com/ScriptReference/UIElements.BindingUpdateTrigger.html) | no  | `BindingUpdateTrigger.OnSourceChanged` |
 
@@ -51,7 +51,7 @@ private static readonly BindableProperty<Label> LabelTextProperty =
   ここにはVisualElementの名前を文字列で指定することもできます。  
   文字列を安全に指定できるようにするためにSourceGeneratorによって`ElementNames`
   という構造体が作成され、VisualElementの名前が宣言されています。  
-  詳細は、[View source generation](../view-source-generation.md)を確認してください。
+  詳細は、[View source generation](../source-generation/view-source-generation.md)を確認してください。
 
 - **bindingMode**  
   [`BindingMode`](https://docs.unity3d.com/ScriptReference/UIElements.BindingMode.html) を指定します。  

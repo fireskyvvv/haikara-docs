@@ -43,7 +43,7 @@ private static readonly TabViewProperty<ShowcaseViewModel> TabProperty =
 | パラメータ                  | 型                                                                                | 必須  | 初期値 |
 |------------------------|----------------------------------------------------------------------------------|-----|-----|
 | tabContentViewInfoList | `IEnumerable<(string viewGuid, PropertyPath labelDataSourcePath)>`               | yes | -   |
-| elementNameInfo        | [`ElementNameInfo`](../view-source-generation.md#ElementNameInfo) | yes | -   |
+| elementNameInfo        | [`ElementNameInfo`](../source-generation/view-source-generation.md#ElementNameInfo) | yes | -   |
 
 - **tabContentViewInfoList**  
   `TabViewProperty`は[`Tab`](https://docs.unity3d.com/Manual/UIE-uxml-element-Tab.html)を生成します。  
@@ -53,7 +53,7 @@ private static readonly TabViewProperty<ShowcaseViewModel> TabProperty =
   `tabContentViewInfoList`で指定したViewに異なるViewModelをバインディングしたい場合は、`tabContentViewInfoList`
   で指定するViewクラスに[`HaikaraViewModelProvidableBase`](../view-classes/view-model-providable.md)を継承させる必要があります。
     - **viewGuid**  
-      ViewクラスのGuidを指定します。指定するGuidのViewクラスを含むアセンブリについて、事前に[`ViewInstaller.Install()`](../view-installer.md#install)
+      ViewクラスのGuidを指定します。指定するGuidのViewクラスを含むアセンブリについて、事前に[`ViewInstaller.Install()`](../source-generation/view-installer.md#install)
       をしておく必要があります。  
       このGuidを元に`Tab`の中身となる`VisualTreeAsset`を取得、インスタンス化し、Viewクラスによってデータバインディングが実施されます。
 

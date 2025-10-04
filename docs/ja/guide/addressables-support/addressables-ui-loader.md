@@ -6,7 +6,7 @@ title: Addressables UI Loader
 
 `Addressables UI Loader` は、Unity
 の [Addressables](https://docs.unity3d.com/ja/Packages/com.unity.addressables@1.20/manual/index.html) システムを利用して
-UIアセット（.uxml,.uss）をロードするための[`UI Loader`](../haikara-core/ui-catalog.md#ui-loader)です。  
+UIアセット（.uxml,.uss）をロードするための[`UI Loader`](../source-generation/ui-catalog.md#ui-loader)です。  
 UIアセットのGuidをアドレスとして扱い、`Addressables.LoadAssetAsync<T>`でUIアセットのロードを実行します。
 
 ```csharp
@@ -24,8 +24,8 @@ UIアセットのGuidをアドレスとして扱い、`Addressables.LoadAssetAsy
         }
 ```
 
-[`[HaikaraUI]`](../haikara-core/haikara-ui-attribute.md#haikaraui-attribute)で指定した`AssetReferenceMode`が`Resource`
-のとき、[`UI Catalog`](../haikara-core/ui-catalog.md)に直接アセットの実体が含まれ、ビルドされます。  
+[`[HaikaraUI]`](../source-generation/haikara-ui-attribute.md#haikaraui-attribute)で指定した`AssetReferenceMode`が`Resource`
+のとき、[`UI Catalog`](../source-generation/ui-catalog.md)に直接アセットの実体が含まれ、ビルドされます。  
 この場合、`UI Catalog`
 をロードすると全てのUIアセットがメモリ上に展開されることになり、UIアセットを多く使用するプロジェクトではメモリ使用量がボトルネックになることが考えられます。  
 `Addressables UI Loader`を通すことで、必要になった場合だけUIアセットをメモリ上にロードすることができるようになり、これらを回避することができます。  

@@ -86,7 +86,7 @@ SourceGeneratorによってソースが生成されるため、Viewクラスに�
 
 - **HaikaraUI Attribute**  
 .uxml(または.uss)のファイルに紐づくクラスであると認識させるために必要なAttributeです。  
-詳細は[HaikaraUI Attribute](../haikara-core/haikara-ui-attribute.md)を参照してください。  
+詳細は[HaikaraUI Attribute](../source-generation/haikara-ui-attribute.md)を参照してください。  
 
 - **HaikaraViewの継承**
 VisualElementに対するバインディングを生成するために必要な継承です。  

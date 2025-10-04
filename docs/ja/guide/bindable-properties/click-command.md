@@ -28,7 +28,7 @@ private void OnClick(EventBase evt)
 |-------------------|-------------------------------------------------------------------|-----|-------------------------|
 | TargetElementName | string                                                            | yes | -                       |
 | ElementIndex      | int                                                               | no  | -1                      |
-| FindType          | [`ElementFindType`](../view-source-generation.md#ElementFindType) | no  | `ElementFindType.First` |
+| FindType          | [`ElementFindType`](../source-generation/view-source-generation.md#ElementFindType) | no  | `ElementFindType.First` |
 
 - **TargetElementName**  
   どの`VisualElement`に対してバインディングを構築するかを指定します。
@@ -37,7 +37,7 @@ private void OnClick(EventBase evt)
   このパラメータは`FindType`が`ElementFindType.Index`以外の場合は無視されます。
 - **FindType**  
   `VisualElement`の探索方法を指定します。  
-  詳細は[View Source Generation](../view-source-generation.md#ElementFindType)を参照してください。
+  詳細は[View Source Generation](../source-generation/view-source-generation.md#ElementFindType)を参照してください。
 
 ## メソッドの引数
 

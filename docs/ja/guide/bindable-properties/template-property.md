@@ -25,12 +25,12 @@ private static readonly TemplateProperty<CounterTemplate> TemplateViewProperty =
 
 | パラメータ        | 型                                                                          | 必須  | 初期値 |
 |--------------|----------------------------------------------------------------------------|-----|-----|
-| templateInfo | [`TemplateInfo`](../view-source-generation.md#TemplateInfo) | yes | -   |
+| templateInfo | [`TemplateInfo`](../source-generation/view-source-generation.md#TemplateInfo) | yes | -   |
 
 - **templateInfo**  
   .uxml上に宣言された`Template`を指定するためのパラメータです。  
   .uxml上に宣言されている`Template`
-  の情報は、SourceGeneratorによって[`TemplateInfoList`](../view-source-generation.md#TemplateInfoList)
+  の情報は、SourceGeneratorによって[`TemplateInfoList`](../source-generation/view-source-generation.md#TemplateInfoList)
   として生成されています。
   `templateInfo`で指定したViewには、この`TemplateProperty<T>`
   を宣言したクラスにバインディングされたViewModelが渡されます。  

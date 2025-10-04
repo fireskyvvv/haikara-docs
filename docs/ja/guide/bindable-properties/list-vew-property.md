@@ -42,13 +42,13 @@ private static AlarmInfoViewModel MakeItem(int index)
 | itemViewId      | `string`                                                                                                | yes | -                                      |
 | makeItemSource  | `MakeItemSourceDelegate`                                                                                | yes | -                                      |
 | itemsSourcePath | [`PropertyPath`](https://docs.unity3d.com/ScriptReference/Unity.Properties.PropertyPath.html)           | yes | -                                      |
-| elementNameInfo | [`ElementNameInfo`](../view-source-generation.md#ElementNameInfo)                                       | yes | -                                      |
+| elementNameInfo | [`ElementNameInfo`](../source-generation/view-source-generation.md#ElementNameInfo)                                       | yes | -                                      |
 | bindingMode     | [`BindingMode`](https://docs.unity3d.com/ScriptReference/UIElements.BindingMode.html)                   | no  | `BindingMode.ToTarget`                 |
 | updateTrigger   | [`BindingUpdateTrigger`](https://docs.unity3d.com/ScriptReference/UIElements.BindingUpdateTrigger.html) | no  | `BindingUpdateTrigger.OnSourceChanged` |
 
 - **itemViewId**  
   ViewクラスのGuidを指定します。指定するGuidのViewクラスを含むアセンブリについて、事前に
-  [`ViewInstaller.Install()`](../view-installer.md#install)
+  [`ViewInstaller.Install()`](../source-generation/view-installer.md#install)
   をしておく必要があります。
   `ListView.makeItem`でこのGuidを元に`VisualTreeAsset`を取得、インスタンス化し、Viewクラスによってデータバインディングが実行されます。
 

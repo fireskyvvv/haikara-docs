@@ -16,8 +16,8 @@ title: Haikara Manager
 
 ## Initialize
 
-`Awake()`の最後に呼ばれます。[`ViewInstaller.Install()`](view/view-installer.md)の実行や、
-Customの[`UILoader`](ui-catalog.md)の登録などをこの中で行うことを想定しています。
+`Awake()`の最後に呼ばれます。[`ViewInstaller.Install()`](../source-generation/view-installer.md)の実行や、
+Customの[`UILoader`](../source-generation/ui-catalog.md)の登録などをこの中で行うことを想定しています。
 
 ## Sample Code
 
