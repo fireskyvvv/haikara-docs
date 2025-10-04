@@ -1,25 +1,23 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Haikara"
+  tagline: MVVM library for Unity UIToolKit.
   actions:
     - theme: brand
-      text: こんにちは
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: What is Haikara?
+      link: /en/guide/introduction/what-is-haikara
+    - theme: brand
+      text: Getting Started
+      link: /en/guide/introduction/getting-started
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: MVVM
+    details: A library to enable MVVM with Unity UI ToolKit.
+  - title: Code-based Runtime Data Binding
+    details: Enables code-based runtime data binding for UI ToolKit.
+  - title: Addressables Support
+    details: Supports loading UI assets compatible with Addressables.
 ---
 

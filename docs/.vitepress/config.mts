@@ -89,7 +89,7 @@ const vitePressI18nConfigs = {
                 },
                 {
                     text: 'Guide',
-                    link: '/en/guide/what-is-haikara'
+                    link: '/en/guide/introduction/what-is-haikara'
                 },
                 {
                     text: 'Reference',

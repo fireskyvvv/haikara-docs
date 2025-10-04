@@ -4,7 +4,7 @@ title: What is Haikara?
 ---
 
 # What is Haikara?
-Haikara is an MVVM (Model-View-ViewModel) library designed for Unity's UIToolKit.  
+Haikara is an MVVM (Model-View-ViewModel) library for Unity UIToolKit.  
 It enables data binding with simple view code.  
 The goal is to eliminate the need to specify DataSource in the UI Builder or write complex UI control logic.
 
