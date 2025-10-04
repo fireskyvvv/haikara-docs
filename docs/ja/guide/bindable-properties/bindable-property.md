@@ -8,7 +8,8 @@ title: Bindable Property
 `BindableProperty`は.uxml上の要素とViewModelのデータバインディングを指定するためのクラスです。  
 Viewクラスに宣言することで、SourceGeneratorが初期化時に宣言された`BindableProperty`を収集します。  
 宣言された`BindableProperty`
-がVisualElementに対して[`VisualElement.SetBinding()`](https://docs.unity3d.com/Documentation/ScriptReference/UIElements.VisualElement.SetBinding.html)
+がVisualElementに対して[
+`VisualElement.SetBinding()`](https://docs.unity3d.com/Documentation/ScriptReference/UIElements.VisualElement.SetBinding.html)
 を実行します。
 
 ## 宣言の方法
@@ -34,7 +35,7 @@ private static readonly BindableProperty<Label> LabelTextProperty =
 |-----------------|---------------------------------------------------------------------------------------------------------|-----|----------------------------------------|
 | bindingId       | [`BindingId`](https://docs.unity3d.com/ScriptReference/UIElements.BindingId.html)                       | yes | -                                      |
 | dataSourcePath  | [`PropertyPath`](https://docs.unity3d.com/ScriptReference/Unity.Properties.PropertyPath.html)           | yes | -                                      |
-| elementNameInfo | [`ElementNameInfo`](../source-generation/view-source-generation.md#ElementNameInfo)                        | yes | -                                      |
+| elementNameInfo | [`ElementNameInfo`](element-name-info)                                                                  | yes | -                                      |
 | bindingMode     | [`BindingMode`](https://docs.unity3d.com/ScriptReference/UIElements.BindingMode.html)                   | no  | `BindingMode.ToTarget`                 |
 | updateTrigger   | [`BindingUpdateTrigger`](https://docs.unity3d.com/ScriptReference/UIElements.BindingUpdateTrigger.html) | no  | `BindingUpdateTrigger.OnSourceChanged` |
 

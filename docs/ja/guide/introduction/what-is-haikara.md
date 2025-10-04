@@ -9,7 +9,7 @@ Haikaraは、UnityのUIToolKit向けに設計されたMVVM（Model-View-ViewMode
 UI BuilderでDataSourceを指定したり、複雑なUI制御ロジックを書かなくて済むようになることを目指します。
 
 ## 動作環境
-Unity 6000.0.50 以上
+Unity 6000.0.以降 (開発は Unity 6000.0.58f2 で行われています。)  
 HaikaraはUnity6の[ランタイムデータバインディング](https://docs.unity3d.com/6000.0/Documentation/Manual/UIE-runtime-binding.html)の機能を利用します。
 
 ## 主な機能

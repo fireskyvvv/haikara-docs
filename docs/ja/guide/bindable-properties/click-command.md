@@ -24,11 +24,11 @@ private void OnClick(EventBase evt)
 
 `[ClickCommand]`は次のパラメータを指定することができます。
 
-| パラメータ             | 型                                                                 | 必須  | 初期値                     |
-|-------------------|-------------------------------------------------------------------|-----|-------------------------|
-| TargetElementName | string                                                            | yes | -                       |
-| ElementIndex      | int                                                               | no  | -1                      |
-| FindType          | [`ElementFindType`](../source-generation/view-source-generation.md#ElementFindType) | no  | `ElementFindType.First` |
+| パラメータ             | 型                                                         | 必須  | 初期値                     |
+|-------------------|-----------------------------------------------------------|-----|-------------------------|
+| TargetElementName | string                                                    | yes | -                       |
+| ElementIndex      | int                                                       | no  | -1                      |
+| FindType          | [`ElementFindType`](element-name-info.md#ElementFindType) | no  | `ElementFindType.First` |
 
 - **TargetElementName**  
   どの`VisualElement`に対してバインディングを構築するかを指定します。
@@ -37,7 +37,7 @@ private void OnClick(EventBase evt)
   このパラメータは`FindType`が`ElementFindType.Index`以外の場合は無視されます。
 - **FindType**  
   `VisualElement`の探索方法を指定します。  
-  詳細は[View Source Generation](../source-generation/view-source-generation.md#ElementFindType)を参照してください。
+  詳細は[こちら](element-name-info.md#ElementFindType)を参照してください。
 
 ## メソッドの引数
 

@@ -35,5 +35,5 @@ private static readonly TemplateProperty<CounterTemplate> TemplateViewProperty =
   `templateInfo`で指定したViewには、この`TemplateProperty<T>`
   を宣言したクラスにバインディングされたViewModelが渡されます。  
   ViewModelをバインディングしたい場合は、`<T>`
-  で指定するViewクラスに[`HaikaraViewModelProvidableBase`](../view-classes/view-model-providable.md)を継承させる必要があります。
+  で指定するViewクラスに[`HaikaraViewModelProvidableBase`](../view-classes/sub-view-model-providable-view-base.md)を継承させる必要があります。
 

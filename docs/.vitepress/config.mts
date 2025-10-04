@@ -1,5 +1,4 @@
 import {defineConfig} from 'vitepress'
-import {generateSidebar} from 'vitepress-sidebar';
 import {withSidebar} from 'vitepress-sidebar';
 import {withI18n} from 'vitepress-i18n';
 

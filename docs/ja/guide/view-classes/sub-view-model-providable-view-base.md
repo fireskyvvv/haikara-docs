@@ -1,6 +1,7 @@
-﻿# SubViewModelProvidableViewBase
+﻿# `SubViewModelProvidableViewBase<T1,T2>`
 
-`SubViewModelProvidableViewBase`は、データソースの設定時に親となるViewにバインディングされたViewModelと異なるViewModelをバインディングすることができるViewクラスです。
+`SubViewModelProvidableViewBase`は、データソースの設定時に親となるViewにバインディングされたViewModelと異なるViewModelをバインディングすることができるViewクラスです。  
+`T1`には親となる`ViewModel`が、`T2`には子となる`ViewModel`の型をそれぞれ設定します。  
 次のようにViewクラスを定義することができます。
 
 ```csharp
