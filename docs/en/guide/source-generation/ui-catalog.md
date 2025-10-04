@@ -21,8 +21,7 @@ This path is fixed.
 ## Manual Generate UI Catalog
 
 In addition to automatic generation, you can also manually generate the `UI Catalog`.  
-Select `Haikara > Regenerate UI Catalog` from the menu bar to execute the generation process.  
-[todo image]
+Select `Haikara > Regenerate UI Catalog` from the menu bar to execute the generation process.
 
 ## `UIAssetInfo<T>`
 

@@ -12,9 +12,9 @@ Registered View classes can then be referenced by their [`UxmlGuid`](view-source
 
 This method registers all View classes in the assembly with the `View Provider`.  
 You must call this method explicitly.
-If you use properties such as [`ListView Property`](../../bindable-properties/list-vew-property)
+If you use properties such as [`ListView Property`](../bindable-properties/list-vew-property)
 that require specifying a View class by Guid, you need to call `ViewInstaller.Install()` in advance for the assembly containing the specified View class.  
-It is recommended to call `ViewInstaller.Install()` in [`HaikaraManager.Initialize()`](../haikara-manager).
+It is recommended to call `ViewInstaller.Install()` in [`HaikaraManager.Initialize()`](../utils/haikara-manager.md).
 
 ## View Provider
 

@@ -17,7 +17,6 @@ const vitePressConfigs = {
             {icon: 'github', link: 'https://github.com/fireskyvvv/Haikara'}
         ]
     },
-    ignoreDeadLinks: true, // todo set false
 }
 
 const commonSidebarConfigs = {

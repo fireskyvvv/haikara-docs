@@ -25,7 +25,6 @@ Viewクラス、またはStyleクラスからUIアセットの読み込みを行
 
 自動生成の他に、`UI Catalog`の生成を手動で実行することも可能です。  
 メニューバーを `Haikara > Regenerate UI Catalog` の順で選択することで生成処理が実行されます。  
-[todo 画像]
 
 ## `UIAssetInfo<T>`
 

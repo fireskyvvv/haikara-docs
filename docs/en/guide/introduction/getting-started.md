@@ -13,9 +13,9 @@ title: Getting started
 Refer to the [Unity documentation](https://docs.unity3d.com/6000.0/Documentation/Manual/upm-ui-giturl.html) and add the
 following URL:
 
-``
-https://github.com/fireskyvvv/Haikara.git?path=Haikara/Assets/Haikara
-``
+```
+https://github.com/fireskyvvv/Haikara.git#upm
+```
 
 You can also install by directly editing `Packages/manifest.json`:
 
@@ -23,7 +23,7 @@ You can also install by directly editing `Packages/manifest.json`:
 {
   "dependencies": {
     ...
-    "com.katen.haikara": "https://github.com/fireskyvvv/Haikara.git?path=Haikara/Assets/Haikara",
+    "com.katen.haikara": "https://github.com/fireskyvvv/Haikara.git#upm",
     ...
   }
 }
@@ -40,13 +40,11 @@ the Unity Editor.
 
 Once Haikara is installed, first set up the [
 `Assembly Definition`](https://docs.unity3d.com/Manual/assembly-definition-files.html).  
-Add `Haikara.Runtime.Core` to the `Assembly Definition References` of the .asmdef you created (or an existing one).  
-[todo image]
+Add `Haikara.Runtime.Core` to the `Assembly Definition References` of the .asmdef you created (or an existing one).
 
 ### 2. Creating the ViewModel class
 
-Create the elements to be bound.  
-In Haikara, you can use a class that inherits from [`ViewModelBase`](todo Url) as a ViewModel.  
+Create the elements to be bound.
 Create a ViewModel class as shown below (write the namespace to match your environment):
 
 ```csharp
@@ -63,10 +61,10 @@ namespace Haikara.Samples.FirstSample.Runtime.View
 
 #### CreateProperty Attribute
 
-A property to be bound to a VisualElement requires the [
-`CreateProperty Attribute`](https://docs.unity3d.com/ScriptReference/Unity.Properties.CreatePropertyAttribute.html).  
-Although only a getter is implemented in this example, a setter is required depending on the [
-`BindingMode`](https://docs.unity3d.com/ScriptReference/UIElements.BindingMode.html).
+A property to be bound to a VisualElement requires the 
+[`CreateProperty Attribute`](https://docs.unity3d.com/ScriptReference/Unity.Properties.CreatePropertyAttribute.html).  
+Although only a getter is implemented in this example, a setter is required depending on the 
+[`BindingMode`](https://docs.unity3d.com/ScriptReference/UIElements.BindingMode.html).
 
 ### 3. Creating .cs and .uxml files
 
@@ -78,7 +76,7 @@ The .cs file acts as the code-behind for the .uxml.
 In Haikara, this is called a `View class`.
 
 Here, we create `FirstSample.cs` and `FirstSample.uxml`.  
-[todo image]
+![file-structure-sample](/assets/guide/introduction/file-structure-sample.png)
 
 ### 4. Editing .uxml
 
@@ -86,7 +84,7 @@ For elements that require data binding, give them a name.
 By naming them, a list of element names is generated on the View class side, enabling safe identification of target
 VisualElements.  
 Edit the .uxml as follows. You can edit either via the UI Builder or directly editing the .uxml.  
-[todo image]
+![file-structure-sample](/assets/guide/introduction/ui-builder-sample.png)
 
 Example .uxml file:
 
@@ -114,7 +112,7 @@ The View class requires the following elements:
 
 - **Inherit from HaikaraView**
   Inheritance required to generate binding for VisualElements.  
-  [HaikaraViewWithViewModel](todo Url) is the HaikaraView class suitable for ViewModel binding.
+  [HaikaraViewBaseWithViewModel](../view-classes/haikara-view-base-with-view-model.md) is the HaikaraView class suitable for ViewModel binding.
 
 Edit the View class as follows (write the namespace to match your environment):
 
@@ -125,7 +123,7 @@ using Haikara.Runtime.Core.View;
 namespace Haikara.Samples.FirstSample.Runtime.View
 {
     [HaikaraUI]
-    public partial class FirstSample : HaikaraViewWithViewModel<FirstSampleViewModel>
+    public partial class FirstSample : HaikaraViewBaseWithViewModel<FirstSampleViewModel>
     {
         
     }
@@ -141,14 +139,15 @@ Confirm that the following code is generated:
 
 In [JetBrains Rider](https://www.jetbrains.com/rider/), you can check the generated code under `Dependencies` in the
 target assembly (csproj) from the [Project Tool Window](https://pleiades.io/help/rider/Project_Tool_Window.html).  
-[image](todo Url)
+![dependenciesSample](/assets/guide/introduction/dependencies-sample.png)
 
-For details on the generated code, see [View source generation](todo url) and [ViewInstaller](todo url).
+For details on the generated code, see 
+[View source generation](../source-generation/view-source-generation.md) and [View Installer](../source-generation/view-installer.md).
 
 ### 6. Declaring binding definitions
 
 Declare in the View code which VisualElement to bind to which property on the ViewModel.  
-Declare the following [BindableProperty](todo url) in the View class.
+Declare the following [BindableProperty](../bindable-properties/bindable-property.md) in the View class.
 You may need to use `using Unity.Properties` and `using UnityEngine.UIElements` as needed.
 
 ```csharp
@@ -184,11 +183,11 @@ namespace Haikara.Samples.FirstSample.Runtime
 Attach the created class to a GameObject in an appropriate scene that has a UI Document component attached.  
 For the UI Document component,
 see [here](https://docs.unity3d.com/6000.2/Documentation/Manual/UIE-create-ui-document-component.html).  
-[todo image]
+![attach-haikar-amanager](/assets/guide/introduction/attach-haikara-manager.png)
 
 When you enter play mode, you should see "Hello, Haikara!" displayed on the label.  
 This completes the Haikara tutorial.  
-[todo image]
+![first-sample-result](/assets/guide/introduction/first-sample-result.png)
 
 ## About file structure
 

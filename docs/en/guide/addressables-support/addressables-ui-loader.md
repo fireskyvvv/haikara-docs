@@ -27,8 +27,7 @@ In this case, loading the `UI Catalog` will load all UI assets into memory at on
 By using the `Addressables UI Loader`, you can load UI assets into memory only when needed, avoiding such bottlenecks.
 
 The following image shows the Memory Profiler when toggling display of a dialog UI registered via the `Addressables UI Loader`.  
-You can check this in the [`AddressablesSample`](todo url) project.  
-[todo image]
+![memory-profile-result](/assets/guide/addressables-support/memory-profile-result.png)
 
 ## Addressables Group Maker
 

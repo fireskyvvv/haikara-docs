@@ -30,9 +30,8 @@ UIアセットのGuidをアドレスとして扱い、`Addressables.LoadAssetAsy
 をロードすると全てのUIアセットがメモリ上に展開されることになり、UIアセットを多く使用するプロジェクトではメモリ使用量がボトルネックになることが考えられます。  
 `Addressables UI Loader`を通すことで、必要になった場合だけUIアセットをメモリ上にロードすることができるようになり、これらを回避することができます。  
 
-次の画像は`Addressables UI Loader`にダイアログのUIを登録し、表示/非表示を切り替えた時のMemory Profilerの様子です。    
-[`AddressablesSample`](todo url)で確認することができます。
-[todo 画像]
+次の画像は`Addressables UI Loader`にダイアログのUIを登録し、表示/非表示を切り替えた時のMemory Profilerの様子です。
+![memory-profile-result](/assets/guide/addressables-support/memory-profile-result.png)
 
 
 ## Addressables Group Maker

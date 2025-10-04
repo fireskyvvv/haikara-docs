@@ -32,12 +32,10 @@ https://github.com/fireskyvvv/Haikara.git#upm
 
 ### 1 asmdefの設定
 Haikaraのインストールが完了したらまず、[`Assembly Definition`](https://docs.unity3d.com/Manual/assembly-definition-files.html)の設定を行います。  
-作成した(または既存の).asmdefの`Assembly Definition References`に`Haikara.Runtime.Core`を追加してください。  
-[todo 画像]
+作成した(または既存の).asmdefの`Assembly Definition References`に`Haikara.Runtime.Core`を追加してください。
 
 ### 2 ViewModelクラスの作成
-バインディングする要素の作成を行います。  
-Haikaraでは[`ViewModelBase`](todo Url)を継承したクラスをViewModelとして扱うことができます。  
+バインディングする要素の作成を行います。   
 次のようにViewModelクラスを作成します。(namespaceは環境に合わせて記述してください)
 
 ```csharp
@@ -63,13 +61,13 @@ VisualElementにバインディングさせるプロパティには [`CreateProp
 Haikaraでは`Viewクラス`と呼称します。  
 
 ここでは、`FirstSample.cs`と`FirstSample.uxml`を作成しました。  
-[todo 画像]
+![file-structure-sample](/assets/guide/introduction/file-structure-sample.png)
 
 ### 4 .uxmlを編集する 
 データバインディングをする必要がある要素については、名前をつけてください。  
 名前を付けることによって、Viewクラス側にエレメント名の一覧が生成され、安全に対象となるVisualElementの特定ができるようになります。  
 次のように.uxmlの編集を行ってください。UI Builder上からの編集、.uxmlの直接編集のどちらでも問題ありません。  
-[todo 画像]  
+![file-structure-sample](/assets/guide/introduction/ui-builder-sample.png) 
 
 .uxmlファイル
 ```xml
@@ -92,7 +90,7 @@ SourceGeneratorによってソースが生成されるため、Viewクラスに�
 
 - **HaikaraViewの継承**
 VisualElementに対するバインディングを生成するために必要な継承です。  
-[HaikaraViewWithViewModel](todo Url)は、ViewModelのバインディングを行うのに適した`HaikaraView`クラスです。  
+[HaikaraViewBaseWithViewModel](../view-classes/haikara-view-base-with-view-model.md)は、ViewModelのバインディングを行うのに適した`HaikaraView`クラスです。  
 
 
 Viewクラスを次のように編集してください。(namespaceは環境に合わせて記述してください)
@@ -103,7 +101,7 @@ using Haikara.Runtime.Core.View;
 namespace Haikara.Samples.FirstSample.Runtime.View
 {
     [HaikaraUI]
-    public partial class FirstSample : HaikaraViewWithViewModel<FirstSampleViewModel>
+    public partial class FirstSample : HaikaraViewBaseWithViewModel<FirstSampleViewModel>
     {
         
     }
@@ -117,13 +115,14 @@ namespace Haikara.Samples.FirstSample.Runtime.View
 
 [JetBrains Rider](https://www.jetbrains.com/rider/)では[エクスプローラウィンドウ](https://pleiades.io/help/rider/Project_Tool_Window.html)から
 対象のアセンブリ(csproj)内の`Dependencies`内に生成されたコードを確認できます。  
-[画像](todo Url)  
+![dependenciesSample](/assets/guide/introduction/dependencies-sample.png)  
 
-生成されたコードの内容については、[View source generation](todo url) および、[ViewInstaller](todo url)を参照してください。  
+生成されたコードの内容については、[View source generation](../source-generation/view-source-generation.md) および、
+[View Installer](../source-generation/view-installer.md)を参照してください。  
 
 ### 6 バインディング定義を宣言する
 どのVisualElementに対して、ViewModel上のどのプロパティをバインディングするかをViewコード上で宣言します。  
-Viewクラスに次の[BindableProperty](todo url)を宣言してください。
+Viewクラスに次の[BindableProperty](../bindable-properties/bindable-property.md)を宣言してください。
 必要に応じて、`Unity.Properties`および`UnityEngine.UIElements`をusingする必要があります。  
 ```csharp
         private static readonly BindableProperty<Label> LabelProperty =
@@ -156,11 +155,11 @@ namespace Haikara.Samples.FirstSample.Runtime
 
 作成したクラスを適当なシーン上のUI DocumentコンポーネントがアタッチされているGameObjectにアタッチしてください。  
 UI Document コンポーネントについては[こちら](https://docs.unity3d.com/6000.2/Documentation/Manual/UIE-create-ui-document-component.html)を確認してください。  
-[todo 画像]  
+![attach-haikara-manager](/assets/guide/introduction/attach-haikara-manager.png)
 
 Playモードを実行すると、LabelにHello,Haikara!の文字が表示されるはずです。  
 ここまででHaikaraのチュートリアルは完了です。  
-[todo 画像]
+![first-sample-result](/assets/guide/introduction/first-sample-result.png)
 
 ## ファイル構造について
 .uxmlや.ussに対応するコードを生成するには次のようなファイル構造が必要です。  

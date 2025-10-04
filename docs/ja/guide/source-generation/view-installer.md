@@ -13,10 +13,10 @@ title: View Installer
 
 アセンブリ内のすべてのViewクラスを`View Provider`に登録する処理を実行するメソッドです。  
 このメソッドは明示的に呼び出す必要があります。
-[`ListView Property`](../../bindable-properties/list-vew-property)
+[`ListView Property`](../bindable-properties/list-vew-property.md)
 など、ViewクラスをGuidで指定する必要があるプロパティを使用する場合、指定したViewクラスが所属するアセンブリの
 `ViewInstaller.Install()`を事前に呼ぶ必要があります。  
-`ViewInstaller.Install()`をの呼び出しは、通常、[`HaikaraManager.Initialize()`](../haikara-manager)で実行されることが推奨されます。
+`ViewInstaller.Install()`をの呼び出しは、通常、[`HaikaraManager.Initialize()`](../utils/haikara-manager.md)で実行されることが推奨されます。
 
 ## View Provider
 
