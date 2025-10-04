@@ -39,3 +39,4 @@ UIアセットのGuidをアドレスとして扱い、`Addressables.LoadAssetAsy
 
 `Addressables UI Loader`に対応するAddressablesの設定を行うための専用のツールを用意しています。  
 メニューバーの `Haikara > Addressables > Group Maker Window` からツールを起動することができます。  
+Addressables Groupを.uxml、.ussごとに作成し、そのエントリとして各UIアセットを追加します。  
