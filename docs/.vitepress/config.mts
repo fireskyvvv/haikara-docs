@@ -35,8 +35,8 @@ const vitePressSidebarConfigGuide = [
         return {
             ...commonSidebarConfigs,
             ...(rootLocale === lang ? {} : {basePath: `/${lang}/`}),
-            documentRootPath: `/docs/${lang}/guide/`,
-            resolvePath: rootLocale === lang ? '/guide/' : `/${lang}/guide/`,
+            documentRootPath: `/docs/${lang}`,
+            resolvePath: rootLocale === lang ? '/' : `/${lang}/`,
             // SortFolder
             manualSortFileNameByPriority: [
                 'introduction',
@@ -62,7 +62,7 @@ const vitePressSidebarConfigGuide = [
 ]
 
 const vitePressI18nConfigs = {
-    locales: ['ja', 'en'],
+    locales: supportedLocales,
     rootLocale: rootLocale,
     searchProvider: 'local',
     themeConfig: {
