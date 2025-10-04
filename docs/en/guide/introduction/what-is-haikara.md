@@ -1,20 +1,21 @@
 ﻿---
 order: -1
+title: What is Haikara?
 ---
 
-# Haikaraとは
-Haikaraは、UnityのUIToolKit向けに設計されたMVVM（Model-View-ViewModel）ライブラリです。  
-簡単なViewコードを記述することでデータバインディングを実現します。  
-UI BuilderでDataSourceを指定したり、複雑なUI制御ロジックを書かなくて済むようになることを目指します。
+# What is Haikara?
+Haikara is an MVVM (Model-View-ViewModel) library designed for Unity's UIToolKit.  
+It enables data binding with simple view code.  
+The goal is to eliminate the need to specify DataSource in the UI Builder or write complex UI control logic.
 
-# 動作環境
-Unity 6000.0.50 以上
-HaikaraはUnity6の[ランタイムデータバインディング](https://docs.unity3d.com/6000.0/Documentation/Manual/UIE-runtime-binding.html)の機能を利用します。
+## Environment
+Unity 6000.0 or later (developed with Unity 6000.0.58f2).  
+Haikara uses Unity 6's [runtime data binding](https://docs.unity3d.com/6000.0/Documentation/Manual/UIE-runtime-binding.html) feature.
 
-# 主な機能
-- **コードのみでバインディングを定義**  
-C#のみでUI ToolKitのデータバインディングを定義できます。  
-UI Builder側での作業は不要です。
+## Main Features
+- **Define binding with code only**  
+  You can define data binding for UI ToolKit using only C#.  
+  No work is required in the UI Builder.
 ```csharp
     [HaikaraUI]
     public partial class Counter : HaikaraViewBaseWithViewModel<CounterViewModel>
@@ -27,14 +28,14 @@ UI Builder側での作業は不要です。
     }
 ```
 
-- **Source GeneratorによるViewコードの自動生成**  
-Roslyn Source Generatorを利用し、.uxml に対応するpartialクラスとして主に以下の要素を自動生成します
-  - 宣言したプロパティの自動登録 (InitializeComponentInternal)
-  - 対応するVisualTreeAssetの識別子 (UxmlGuid)  
-  - .uxml上で設定されているエレメント名の一覧 (ElementNames)
-  - .uxml上で使用されているTemplateの情報の一覧 (TemplateInfoList)
+- **Automatic View code generation by Source Generator**  
+  Using Roslyn Source Generator, partial classes corresponding to .uxml, mainly the following, are automatically generated:
+    - Automatic registration of declared properties (InitializeComponentInternal)
+    - Identifier for the corresponding VisualTreeAsset (UxmlGuid)
+    - List of element names set in .uxml (ElementNames)
+    - List of template information used in .uxml (TemplateInfoList)
 
-生成されるViewのコード例
+Example of generated View code
 ```csharp
     public partial class Counter
     {
@@ -68,10 +69,10 @@ Roslyn Source Generatorを利用し、.uxml に対応するpartialクラスと�
     }
 ```
 
-- **Source GeneratorにStyleコードの自動生成**  
-.uss上で使用されているクラス宣言を一覧化したり、任意にStyleSheetを呼び出すためのコードをSourceGeneratorから生成します。
+- **Automatic style code generation by Source Generator**  
+  The SourceGenerator generates code for listing class declarations used in .uss and for loading StyleSheets as needed.
 
-uss例
+uss example
 ```css
 .unity-label {
     color: red;
@@ -94,7 +95,7 @@ uss例
     font-size: 15;
 }
 ```
-このような.ussに対応するStyleクラスを作成すると次のようなコードが生成され、StyleSheetのロードや、VisualElement.AddToClassList() を型安全に実施することができます。  
+A Style class corresponding to such a .uss is generated as follows, allowing you to load StyleSheets and use VisualElement.AddToClassList() in a type-safe manner:
 
 ```csharp
     public partial class TestStyle
@@ -128,5 +129,5 @@ uss例
     }
 ```
 
-# ライセンス
-Haikaraは [MIT License]()で公開しています。
+## License
+Haikara is released under the [MIT License]().

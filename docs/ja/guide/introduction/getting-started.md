@@ -2,28 +2,30 @@
 title: Getting started
 ---
 
+# はじめに
+
 ## 導入方法
 **Unity 6000.0以降が必要です**
 
-## UPMでのインストール (Git URL)
+### UPMでのインストール (Git URL)
 [Unityのドキュメント](https://docs.unity3d.com/6000.0/Documentation/Manual/upm-ui-giturl.html)を参考に次のURLを追加してください  
 
-``
-https://github.com/fireskyvvv/Haikara.git?path=Haikara/Assets/Haikara
-``
+```
+https://github.com/fireskyvvv/Haikara.git#upm
+```
 
 `Packages/manifest.json` を直接編集してインストールすることもできます。
 ```
 {
   "dependencies": {
     ...
-    "com.katen.haikara": "https://github.com/fireskyvvv/Haikara.git?path=Haikara/Assets/Haikara",
+    "com.katen.haikara": "https://github.com/fireskyvvv/Haikara.git#upm",
     ...
   }
 }
 ```
 
-### UnityPackageでのインストール
+#### UnityPackageでのインストール
 [リリース](https://github.com/fireskyvvv/Haikara/releases)ページから.unitypackageをダウンロードし、UnityEditor上で展開してください
 
 ## チュートリアル
