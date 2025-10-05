@@ -8,10 +8,12 @@ const supportedLocales = [rootLocale, 'en'];
 const vitePressConfigs = {
     head: [
         ['link', {rel: 'icon', type: 'image/svg+xml', href: '/haikara-docs/assets/logo.svg'}],
+        ["meta", {property: "og:site_name", content: "haikara-docs"}],
+        ["meta", {property: "twitter:card", content: "summary"}],
     ],
     base: `/haikara-docs/`,
     title: "Haikara",
-    description: "A VitePress Site",
+    description: "Haikara Document Site",
     rewrites: {
         [`${rootLocale}/:rest*`]: ':rest*',
     },
@@ -20,6 +22,16 @@ const vitePressConfigs = {
         socialLinks: [
             {icon: 'github', link: 'https://github.com/fireskyvvv/Haikara'},
         ]
+    },
+    async transformHead(context) {
+        const ogUrl = `https://fireskyvvv.github.io/${context.pageData.filePath
+            .replace(/^\//, "")
+            .replace(/\.md$/, ".html")}`;
+        return [
+            ["meta", {property: "og:title", content: context.pageData.title}],
+            ["meta", {property: "og:url", content: ogUrl}],
+            ["meta", {property: "og:type", content: "article"}],
+        ];
     },
 }
 
