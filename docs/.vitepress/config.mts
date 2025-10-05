@@ -21,6 +21,7 @@ const vitePressConfigs = {
         logo: '/assets/logo.svg',
         socialLinks: [
             {icon: 'github', link: 'https://github.com/fireskyvvv/Haikara'},
+            {icon: 'x', link: 'https://x.com/fireskyvvv'},
         ]
     },
     async transformHead(context) {
