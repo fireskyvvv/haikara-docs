@@ -10,6 +10,8 @@ const vitePressConfigs = {
         ['link', {rel: 'icon', type: 'image/svg+xml', href: '/haikara-docs/assets/logo.svg'}],
         ["meta", {property: "og:site_name", content: "haikara-docs"}],
         ["meta", {property: "twitter:card", content: "summary"}],
+        ['meta', {property: 'og:type', content: 'website'}],
+        ['meta', {property: 'og:image', content: 'https://fireskyvvv.github.io/haikara-docs/assets/ogimage.jpg'}],
     ],
     base: `/haikara-docs/`,
     title: "Haikara",
@@ -23,16 +25,6 @@ const vitePressConfigs = {
             {icon: 'github', link: 'https://github.com/fireskyvvv/Haikara'},
             {icon: 'x', link: 'https://x.com/fireskyvvv'},
         ]
-    },
-    async transformHead(context) {
-        const ogUrl = `https://fireskyvvv.github.io/${context.pageData.filePath
-            .replace(/^\//, "")
-            .replace(/\.md$/, ".html")}`;
-        return [
-            ["meta", {property: "og:title", content: context.pageData.title}],
-            ["meta", {property: "og:url", content: ogUrl}],
-            ["meta", {property: "og:type", content: "article"}],
-        ];
     },
 }
 
