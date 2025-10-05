@@ -8,16 +8,21 @@ hero:
     - theme: brand
       text: What is Haikara?
       link: /en/guide/introduction/what-is-haikara
-    - theme: brand
-      text: Getting Started
-      link: /en/guide/introduction/getting-started
-
+    - theme: alt
+      text: Install
+      link: https://github.com/fireskyvvv/Haikara?tab=readme-ov-file#english
+    - theme: alt
+      text: GitHub
+      link: https://github.com/fireskyvvv/Haikara
 features:
-  - title: MVVM
+  - icon: 😻
+    title: MVVM
     details: A library to enable MVVM with Unity UI ToolKit.
-  - title: Code-based Runtime Data Binding
+  - icon: 🐶
+    title: Code-based Runtime Data Binding
     details: Enables code-based runtime data binding for UI ToolKit.
-  - title: Addressables Support
+  - icon: 🦔
+    title: Addressables Support
     details: Supports loading UI assets compatible with Addressables.
 ---
 

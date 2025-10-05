@@ -8,16 +8,24 @@ hero:
     - theme: brand
       text: Haikara とは?
       link: /guide/introduction/what-is-haikara
-    - theme: brand
-      text: はじめる
-      link: /guide/introduction/getting-started
+    
+    - theme: alt
+      text: インストール
+      link: https://github.com/fireskyvvv/Haikara?tab=readme-ov-file#%E5%B0%8E%E5%85%A5%E6%96%B9%E6%B3%95
+      
+    - theme: alt
+      text: GitHub
+      link: https://github.com/fireskyvvv/Haikara
 
 features:
-  - title: MVVM
+  - icon: 😻
+    title: MVVM
     details: Unity UI ToolKitでMVVMをできるようにするためのライブラリです。
-  - title: コードベースのランタイムデータバインディング
+  - icon: 🐶
+    title: コードベースのランタイムデータバインディング
     details: UI ToolKitのランタイムデータバインディングをコードベースでできるようにします。
-  - title: Addressables サポート
+  - icon: 🦔
+    title: Addressables サポート
     details: Addressablesに対応したUIアセットのロードをサポートします。
 ---
 
