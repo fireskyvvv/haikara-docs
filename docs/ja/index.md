@@ -4,6 +4,9 @@ layout: home
 hero:
   name: "Haikara"
   tagline: Unity UI ToolKit向けのMVVMライブラリです。
+  image:
+    src: /assets/logo.svg
+    alt: haikara logo
   actions:
     - theme: brand
       text: Haikara とは?

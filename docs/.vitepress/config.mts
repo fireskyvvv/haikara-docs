@@ -6,6 +6,9 @@ const rootLocale = 'ja'
 const supportedLocales = [rootLocale, 'en'];
 
 const vitePressConfigs = {
+    head: [
+        ['link', {rel: 'icon', type: 'image/svg+xml', href: '/haikara-docs/assets/logo.svg'}],
+    ],
     base: `/haikara-docs/`,
     title: "Haikara",
     description: "A VitePress Site",
@@ -13,8 +16,9 @@ const vitePressConfigs = {
         [`${rootLocale}/:rest*`]: ':rest*',
     },
     themeConfig: {
+        logo: '/assets/logo.svg',
         socialLinks: [
-            {icon: 'github', link: 'https://github.com/fireskyvvv/Haikara'}
+            {icon: 'github', link: 'https://github.com/fireskyvvv/Haikara'},
         ]
     },
 }

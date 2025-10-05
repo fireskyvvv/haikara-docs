@@ -4,6 +4,9 @@ layout: home
 hero:
   name: "Haikara"
   tagline: MVVM library for Unity UIToolKit.
+  image:
+    src: /assets/logo.svg
+    alt: haikara logo
   actions:
     - theme: brand
       text: What is Haikara?
