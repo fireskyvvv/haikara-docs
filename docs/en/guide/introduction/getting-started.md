@@ -70,7 +70,7 @@ Although only a getter is implemented in this example, a setter is required depe
 
 Create a .cs and .uxml file in any folder included in the .asmdef you created.  
 .cs files can be created via `Create > Scripting > Empty C# Script`, and .uxml files via
-`Create > UI ToolKit > UI Document`.  
+`Create > UI Toolkit > UI Document`.  
 Both files must have the same name.  
 The .cs file acts as the code-behind for the .uxml.  
 In Haikara, this is called a `View class`.

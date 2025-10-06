@@ -55,7 +55,7 @@ VisualElementにバインディングさせるプロパティには [`CreateProp
 
 ### 3 .csファイルと.uxmlの作成
 作成した.asmdefに含まれるいずれかのフォルダに.csと.uxmlを作成してください。  
-.csは `Create > Scripting > Empty C# Script`から、.uxmlは `Create > UI ToolKit > UI Document`から作成できます。  
+.csは `Create > Scripting > Empty C# Script`から、.uxmlは `Create > UI Toolkit > UI Document`から作成できます。  
 どちらのファイルも同一の名前である必要があります。  
 .csファイルが.uxmlに対するコードビハインド的に扱われます。  
 Haikaraでは`Viewクラス`と呼称します。  

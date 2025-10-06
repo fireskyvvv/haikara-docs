@@ -4,7 +4,7 @@ title: What is Haikara?
 ---
 
 # Haikaraとは
-Haikaraは、UnityのUIToolKit向けに設計されたMVVM（Model-View-ViewModel）ライブラリです。  
+Haikaraは、UnityのUIToolkit向けに設計されたMVVM（Model-View-ViewModel）ライブラリです。  
 簡単なViewコードを記述することでデータバインディングを実現します。  
 UI BuilderでDataSourceを指定したり、複雑なUI制御ロジックを書かなくて済むようになることを目指します。
 
@@ -14,7 +14,7 @@ HaikaraはUnity6の[ランタイムデータバインディング](https://docs.
 
 ## 主な機能
 - **コードのみでバインディングを定義**  
-C#のみでUI ToolKitのデータバインディングを定義できます。  
+C#のみでUI Toolkitのデータバインディングを定義できます。  
 UI Builder側での作業は不要です。
 ```csharp
     [HaikaraUI]

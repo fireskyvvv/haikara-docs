@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "Haikara"
-  tagline: MVVM library for Unity UIToolKit.
+  tagline: MVVM library for Unity UIToolkit.
   image:
     src: /assets/logo.svg
     alt: haikara logo
@@ -20,10 +20,10 @@ hero:
 features:
   - icon: 😻
     title: MVVM
-    details: A library to enable MVVM with Unity UI ToolKit.
+    details: A library to enable MVVM with Unity UI Toolkit.
   - icon: 🐶
     title: Code-based Runtime Data Binding
-    details: Enables code-based runtime data binding for UI ToolKit.
+    details: Enables code-based runtime data binding for UI Toolkit.
   - icon: 🦔
     title: Addressables Support
     details: Supports loading UI assets compatible with Addressables.

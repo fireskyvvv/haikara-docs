@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "Haikara"
-  tagline: Unity UI ToolKit向けのMVVMライブラリです。
+  tagline: Unity UI Toolkit向けのMVVMライブラリです。
   image:
     src: /assets/logo.svg
     alt: haikara logo
@@ -23,10 +23,10 @@ hero:
 features:
   - icon: 😻
     title: MVVM
-    details: Unity UI ToolKitでMVVMをできるようにするためのライブラリです。
+    details: Unity UI ToolkitでMVVMをできるようにするためのライブラリです。
   - icon: 🐶
     title: コードベースのランタイムデータバインディング
-    details: UI ToolKitのランタイムデータバインディングをコードベースでできるようにします。
+    details: UI Toolkitのランタイムデータバインディングをコードベースでできるようにします。
   - icon: 🦔
     title: Addressables サポート
     details: Addressablesに対応したUIアセットのロードをサポートします。
