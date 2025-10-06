@@ -40,7 +40,7 @@ the Unity Editor.
 
 Once Haikara is installed, first set up the [
 `Assembly Definition`](https://docs.unity3d.com/Manual/assembly-definition-files.html).  
-Add `Haikara.Runtime.Core` to the `Assembly Definition References` of the .asmdef you created (or an existing one).
+Add `Haikara.Runtime` to the `Assembly Definition References` of the .asmdef you created (or an existing one).
 
 ### 2. Creating the ViewModel class
 
@@ -48,7 +48,7 @@ Create the elements to be bound.
 Create a ViewModel class as shown below (write the namespace to match your environment):
 
 ```csharp
-using Haikara.Runtime.Core.ViewModel;
+using Haikara.Runtime.ViewModel;
 
 namespace Haikara.Samples.FirstSample.Runtime.View
 {
@@ -117,8 +117,8 @@ The View class requires the following elements:
 Edit the View class as follows (write the namespace to match your environment):
 
 ```csharp
-using Haikara.Runtime.Core;
-using Haikara.Runtime.Core.View;
+using Haikara.Runtime;
+using Haikara.Runtime.View;
 
 namespace Haikara.Samples.FirstSample.Runtime.View
 {
@@ -164,7 +164,7 @@ You may need to use `using Unity.Properties` and `using UnityEngine.UIElements` 
 To actually display the created UI, create a class that inherits from `HaikaraManager` as follows:
 
 ```
-using Haikara.Runtime.Core;
+using Haikara.Runtime;
 
 namespace Haikara.Samples.FirstSample.Runtime
 {
@@ -207,9 +207,9 @@ Assets
 
 - **Scripts.Runtime.asmdef**  
   An .asmdef must be created for code generation via SourceGenerator.  
-  In the `Assembly Definition References` of the .asmdef you created, reference `Haikara.Runtime.Core.asmdef`.  
+  In the `Assembly Definition References` of the .asmdef you created, reference `Haikara.Runtime.asmdef`.  
   Note that the SourceGenerator ignores code in `Assembly-CSharp`, `Assembly-CSharp-Editor`, and assemblies that do not
-  reference `Haikara.Core`.
+  reference `Haikara.Runtime`.
 
 - **View.uxml,View.cs**
   Haikara recognizes .cs and .uxml (or .uss) with the same name (excluding the extension), in the same assembly and at

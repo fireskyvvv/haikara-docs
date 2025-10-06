@@ -44,7 +44,7 @@ Example of generated View code
         {
             return UxmlGuid;
         }
-        public override Haikara.Runtime.Core.AssetReferenceMode AssetReferenceMode => Haikara.Runtime.Core.AssetReferenceMode.Resource;
+        public override Haikara.Runtime.AssetReferenceMode AssetReferenceMode => Haikara.Runtime.AssetReferenceMode.Resource;
         
         protected override void InitializeComponentInternal()
         {
@@ -111,7 +111,7 @@ A Style class corresponding to such a .uss is generated as follows, allowing you
             return await RuntimeUICatalog.Instance.LoadStyleSheetAsync(UssGuid);
         }
         
-        public override Haikara.Runtime.Core.AssetReferenceMode AssetReferenceMode => Haikara.Runtime.Core.AssetReferenceMode.Resource;
+        public override Haikara.Runtime.AssetReferenceMode AssetReferenceMode => Haikara.Runtime.AssetReferenceMode.Resource;
         
         public class UsedClassNames
         {

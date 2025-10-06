@@ -44,7 +44,7 @@ Roslyn Source Generatorを利用し、.uxml に対応するpartialクラスと�
         {
             return UxmlGuid;
         }
-        public override Haikara.Runtime.Core.AssetReferenceMode AssetReferenceMode => Haikara.Runtime.Core.AssetReferenceMode.Resource;
+        public override Haikara.Runtime.AssetReferenceMode AssetReferenceMode => Haikara.Runtime.AssetReferenceMode.Resource;
         
         protected override void InitializeComponentInternal()
         {
@@ -111,7 +111,7 @@ uss例
             return await RuntimeUICatalog.Instance.LoadStyleSheetAsync(UssGuid);
         }
         
-        public override Haikara.Runtime.Core.AssetReferenceMode AssetReferenceMode => Haikara.Runtime.Core.AssetReferenceMode.Resource;
+        public override Haikara.Runtime.AssetReferenceMode AssetReferenceMode => Haikara.Runtime.AssetReferenceMode.Resource;
         
         public class UsedClassNames
         {

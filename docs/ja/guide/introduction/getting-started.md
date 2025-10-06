@@ -32,14 +32,14 @@ https://github.com/fireskyvvv/Haikara.git#upm
 
 ### 1 asmdefの設定
 Haikaraのインストールが完了したらまず、[`Assembly Definition`](https://docs.unity3d.com/Manual/assembly-definition-files.html)の設定を行います。  
-作成した(または既存の).asmdefの`Assembly Definition References`に`Haikara.Runtime.Core`を追加してください。
+作成した(または既存の).asmdefの`Assembly Definition References`に`Haikara.Runtime`を追加してください。
 
 ### 2 ViewModelクラスの作成
 バインディングする要素の作成を行います。   
 次のようにViewModelクラスを作成します。(namespaceは環境に合わせて記述してください)
 
 ```csharp
-using Haikara.Runtime.Core.ViewModel;
+using Haikara.Runtime.ViewModel;
 
 namespace Haikara.Samples.FirstSample.Runtime.View
 {
@@ -95,8 +95,8 @@ VisualElementに対するバインディングを生成するために必要な�
 
 Viewクラスを次のように編集してください。(namespaceは環境に合わせて記述してください)
 ```csharp
-using Haikara.Runtime.Core;
-using Haikara.Runtime.Core.View;
+using Haikara.Runtime;
+using Haikara.Runtime.View;
 
 namespace Haikara.Samples.FirstSample.Runtime.View
 {
@@ -137,7 +137,7 @@ Viewクラスに次の[BindableProperty](../bindable-properties/bindable-propert
 作成したUIを実際に表示するには次のような`HaikaraManager`を継承したクラスを作成します。  
 
 ```
-using Haikara.Runtime.Core;
+using Haikara.Runtime;
 
 namespace Haikara.Samples.FirstSample.Runtime
 {
@@ -178,8 +178,8 @@ Assets
 
 - **Scripts.Runtime.asmdef**  
     SourceGeneratorによるコード生成を行うために、.asmdefを作成する必要があります。  
-    作成した`.asmdef`の`Assembly Definition References`で`Haikara.Runtime.Core.asmdef`を参照してください。  
-    尚、SourceGeneratorは`Assembly-CSharp`、`Assembly-CSharp-Editor`内のコードおよび、`Haikara.Core`を参照しないアセンブリのコードを無視することに注意してください。  
+    作成した`.asmdef`の`Assembly Definition References`で`Haikara.Runtime.asmdef`を参照してください。  
+    尚、SourceGeneratorは`Assembly-CSharp`、`Assembly-CSharp-Editor`内のコードおよび、`Haikara.Runtime`を参照しないアセンブリのコードを無視することに注意してください。  
     
 - **View.uxml,View.cs**
     Haikaraは同一アセンブリ内、同一階層、同一ファイル名(拡張子を除く)の.csと.uxml(または.uss)を対応するファイルであると認識します。  
